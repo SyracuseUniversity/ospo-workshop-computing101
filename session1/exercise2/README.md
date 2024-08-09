@@ -13,7 +13,7 @@ Do the following:
 3. Sort the names in `names-mod.txt` by alphabetical order and write the output to `names-sorted.txt`.
 
 4. (Challenge) Write a single-line bash command that, starting with `names.txt`, will remove the leading numbers and sort the names alphabetically, writing the result out to `names-sorted2.txt`. The original `names.txt` should remain unchanged. Check that `names-sorted.txt` and `names-sorted2.txt` are the same by running
-```
-diff names-sorted.txt names-sorted2.txt
-```
-There should be no differences between them.
+  ```
+  diff names-sorted.txt names-sorted2.txt
+  ```
+  There should be no differences between them.
