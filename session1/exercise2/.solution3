@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+sort names-mod.txt > names-sorted.txt
