@@ -1,6 +1,6 @@
 # Session 1
 
-## Task 1: Basic bash navigation
+## Warmup: Basic bash navigation
 
 1. Open up the terminal.
 
@@ -55,38 +55,15 @@ ls ..
 
 8. Use tab complete until you have `cd computing101` on the command line. Then hit enter to move back into the `computing101` directory.
 
-## Task 2: A simple bash script (6 points)
+9. Clone this repository: in order to do the exercises, you'll need to create a local copy of this repository by "cloning" it. We'll go into more detail about what this means in the session on Git/GitHub, but for now, copy this command into your terminal and hit `<Enter>`:
+```
+git clone git@github.com:SyracuseUniversity/ospo-workshop-computing101.git
+```
 
-Now let's use some bash tools with our data. We're going to do the relatively simple task of counting the number of occurances of the word "here" in the Gettysburg Address.
+10. What happened? Type `ls`. You should see a folder in your directory called `ospo-workshop-computing101`; `cd` into it:
 
-1. The program `grep` can be used to search one or more files for the occurance of a word. To illustrate that, try the following:
 ```
-$ grep "here" gettysburg_address.txt 
+cd ospo-workshop-computing101
 ```
-   Note the output: grep returns a line for each instance of "here" that it found in the file. The number of lines returned by `grep` therfore gives the number of occurances of the word "here". (You can verify this yourself by using `cat` to print the file and manually count.)
 
-2. You could just count the number of lines now to get the number of times "here" appears, but let's do this more progrmattically. For that, we'll use the program `wc` (= word count), which can count the number of occurances of a word, line, or characters in a file. What it reports depends on what arguments you give it. Run:
-```
-wc -l gettysburg_address.txt
-```
-  You'll get a number back. What does the `-l` do? (Check the `man` page for `wc` if you're not sure.)
-
-3. Above, we gave `wc` the `gettysburg_address.txt` file as input. However, `wc`, like all UNIX programs, can take as input the output of another program. This is done by using the *pipe* operator `|`. For example, run:
-```
-cat gettysburg_address.txt | wc -l
-```
-   Note that you get the same value as you got when you ran `wc` directly on the file.
-
-4. Based on what you observed in 1 and 3, write a one-line bash script that uses `grep` and `wc` to to count the number of occurances of "here" in the Gettysburg Address file.
-
-5. Put what you wrote in 4 into a bash script file called `count_here.sh`. To do this, use `vim`, or your favorite text editor. After saving the script, test it by running:
-```
-bash count_here.sh
-```
-   Do you get the same output as you did in 4?
-
-6. Let's save the output from your script by redirecting it to a new file. For that we'll use the bash redirection operator `>`. Run:
-```
-bash count_here.sh > count_here.out
-```
-   This causes the output of `count_here.sh` to be written to the file `count_here.out`. Verify that by running `cat count_here.out`.
+11. Now do the exercises. You can cd into each exercise and follow the instructions in each exercise directory's `README.md`, or read the instructions on GitHub. Good luck!
