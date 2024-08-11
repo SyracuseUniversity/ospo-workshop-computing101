@@ -1,19 +1,23 @@
-# Exercise 2
+# Exercise 2: vim practice
 
-**This exercise has multiple parts. Solutions to each part can be found in the files `.solutionX` where `X` corresponds to the part.**
+The file `add.py` is a Python script, but it's broken! The script should define a function `add()` that takes in two numbers and returns their sum. But there are two problems with it: the two lines following the `def` should be indented, and `return` should precede `a+b`; i.e., it should look like this:
 
-The file `names.txt` contains a list of 50 names in random order, preceeded by a count.
+```python
+def add(a, b):
+    """Function that adds a and b."""
+    return a+b
+```
 
-Do the following:
+To fix this, use `vim` to open `add.py` and:
 
-1. Make a copy of `names.txt`; call the copy `names-seven.txt`. Next, use `sed` to replace all instances of the number `7` with the word `seven`. Do the replacement in place, so that `names-seven.txt` has the `7` replaced.
+1. Indent the two lines following the `def` line (but not the `print` line). Try to use line highlight mode to do this.
 
-2. Make a copy of `names.txt`; call the copy `names-mod.txt`. Use `vim` to remove all the leading numbers in `names-mod.txt`, then save the changes.
+2. Use insert mode to add the word `return` before the `a+b`.
 
-3. Sort the names in `names-mod.txt` by alphabetical order and write the output to `names-sorted.txt`.
+3. Save and exit the file. Then test it by running `python add.py`; `2` should be printed to the screen.
 
-4. (Challenge) Write a single-line bash command that, starting with `names.txt`, will remove the leading numbers and sort the names alphabetically, writing the result out to `names-sorted2.txt`. The original `names.txt` should remain unchanged. Check that `names-sorted.txt` and `names-sorted2.txt` are the same by running
-  ```
-  diff names-sorted.txt names-sorted2.txt
-  ```
-  There should be no differences between them.
+4. Modify `add.py` and add another print line that adds `2+3`; i.e., add `print(2, 3)` on a new line, after the `print(1, 1)` line. Do this by copying and pasting the `print(1, 1)` line, then using replace mode to overwrite the `1`, `1`. Save and exit, then test by running `python add.py`. You should get:
+```
+2
+5
+```
