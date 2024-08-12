@@ -35,11 +35,13 @@ Note the here we provide the `c` flag (for create) instead of `x` and we have to
 
 You can now send `restructured_data.tar.gz` to Otto!
 
-*See `.solution` for a solution to this problem.*
-
-Note: if you want to remove the directories once you're done, run
+*Note: if you want to remove the directories once you're done, run*
 ```
 rm -r restructured_data
 rm -r test
 rm -r data
 ```
+
+-----
+
+*If you get stuck, see `.solution` for a solution to this problem.*
