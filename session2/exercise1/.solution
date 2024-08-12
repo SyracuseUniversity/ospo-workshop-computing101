@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+TIME=$1
+if [ -z $TIME ]; then
+    TIME=$(date +%H)
+else
+    # make sure we only get the hour
+    TIME=$(echo $TIME | awk -F: '{print $1}')
+fi
+
+if [ $TIME -ge 5 ] && [ $TIME -lt 12 ]; then
+    SALUTATION="Good morning"
+elif [ $TIME -ge 12 ] && [ $TIME -lt 17 ]; then
+    SALUTATION="Good afternoon"
+elif [ $TIME -ge 17 ] && [ $TIME -le 23 ]; then
+    SALUTATION="Good evening"
+elif [ $TIME -ge 0 ] && [ $TIME -lt 5 ]; then
+    SALUTATION="Go to bed"
+else
+    # if we get here, time provided was not between 00:00 and 23:59;
+    # raise an error
+    echo "Error: Unrecognized hour $TIME provided. Time must be between 00:00 and 23:59."
+    # we exit with exit code 1 indicating an error (exit code 0 means success)
+    exit 1
+fi
+
+echo ${SALUTATION} ${USER}!
