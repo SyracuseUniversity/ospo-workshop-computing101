@@ -1,4 +1,4 @@
-# Session 1
+# Session 1: Introduction to `bash`, scripting, `vim`
 
 ## Warmup: Basic bash navigation
 
@@ -67,3 +67,9 @@ cd ospo-workshop-computing101
 ```
 
 11. Now do the exercises. You can cd into each exercise and follow the instructions in each exercise directory's `README.md`, or read the instructions on GitHub. Good luck!
+
+## Exercises
+
+* [Exercise 1: A simple `bash` script](exercise1/README.md)
+* [Exercise 2: `vim` practice](exercise2/README.md)
+* [Exercise 3: `sed`, `sort`, and more `vim`](exercise3/README.md)
