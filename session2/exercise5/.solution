@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+# Answer to 2
+outdir=restructured_data
+mkdir -p $outdir
+for fn in $(ls data); do
+    name=$(echo $fn | awk -F_ '{print $1}')
+    run=$(echo $fn | awk -F_ '{print $2}')
+    ftype=$(echo $fn | awk -F_ '{print $3}')
+    mkdir -p ${outdir}/${name}/${run}
+    cp data/${fn} ${outdir}/${name}/${run}/${ftype}
+done
+
+# Answer to 3 and 4
+tar -czvf ${outdir}.tar.gz ${outdir}/*
+mkdir -p test
+cp  ${outdir}.tar.gz test/
+pushd test
+tar -xzvf ${outdir}.tar.gz
+popd
