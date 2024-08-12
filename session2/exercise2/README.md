@@ -1,13 +1,14 @@
-## Exercise 2: Permissions and setting environment variables
+# Exercise 2: Permissions and setting environment variables
 
 -------------------------------------------------------------------------------
-*Note:* This exercise depends on completing Exercise 1. If did not complete
+*Note:* This exercise depends on completing Exercise 1. If you did not complete
 Exercise 1, just copy the `.solution` file there and call it `greeting`. In
 other words, do the following (assuming you are currently in this directory):
 ```
 cp ../exercise1/.solution ../exercise1/greeting
 ```
 You can then do this exercise.
+
 -------------------------------------------------------------------------------
 
 1. Create a directory called `bin` in your repository and copy the `greeting` script you created in Exercise 1 into there. 
@@ -20,6 +21,6 @@ You can then do this exercise.
 $ which greeting
 $ greeting
 ```
-   The first command should return the absoluate path to your `greeting` script, while the second should return the output of `greeting`.
+   The first command should return the absolute path to your `greeting` script, while the second should return the output of `greeting`.
 
-*If you get stuck, see `.solution` for the answer.*
+*If you get stuck, see `.solution`.*

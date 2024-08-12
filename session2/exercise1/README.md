@@ -1,4 +1,4 @@
-## Exercise 1: Evaluting Conditionals
+# Exercise 1: Evaluting Conditionals
 
 Write a bash script named `greeting` that greets you with `${SALUTATION} ${USER}!` when it is run. Here `${USER}` is the current username and `${SALUTATION}` depends on a `TIME` variable. The `${SALUTATION}` should be:
   * `Good morning` if the `TIME` is between 5:00 and 11:59;
@@ -17,7 +17,7 @@ Good afternoon <username>!
 ```
 while running
 ```
-$ bash greeting 10
+$ bash greeting 10:00
 ```
 should yield
 ```
@@ -32,4 +32,4 @@ Hints:
 
 *Bonus challenge:* have the script print an error message and exit with code 1 if a time that is not between 00:00 and 23:59 is provided. Google "bash exit codes" for more details. 
 
-*If you get stuck, see `.solution.sh` for a solution.*
+*If you get stuck, see `.solution` for a solution.*
