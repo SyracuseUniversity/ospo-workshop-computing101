@@ -70,6 +70,6 @@ cd ospo-workshop-computing101
 
 ## Exercises
 
-* [Exercise 1: A simple `bash` script](exercise1/README.md)
-* [Exercise 2: `vim` practice](exercise2/README.md)
-* [Exercise 3: Search and replace](exercise3/README.md)
+* [Exercise 1: A simple `bash` script](exercise1)
+* [Exercise 2: `vim` practice](exercise2)
+* [Exercise 3: Search and replace](exercise3)
