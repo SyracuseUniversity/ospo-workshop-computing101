@@ -1,12 +1,18 @@
 #!/usr/bin/env bash
-# Here we give the -p flag to mkdir so that it doesn't raise an error if bin
-# already exists.
+# Answer 1
+# Note: here we give the -p flag to mkdir so that it doesn't raise an error if
+# bin already exists.
 mkdir -p bin
-# The next line assumes you completed exercise1...
+# The next block just checks if you completed exercise1; if not, it uses the
+# solution there.
+if [ ! -f ../exercise1/greeting ]; then
+    cp ../exercise1/.solution ../exercise1/greeting
+fi
+# Answer 2
 cp ../exercise1/greeting bin/
-# ...but if you didn't, run cp ../exercise1/.solution bin/greeting
-# instead.
+# Answer 3
 chmod +x bin/greeting
+# Ansewr 4
 mkdir -p etc
 # Note: for the next step, you could also use vim to create etc/srcgreeting.sh,
 # then add the PATH command. Here, we're using $(pwd) to get the abosulte path
@@ -19,6 +25,8 @@ mkdir -p etc
 # (by doing \$) so that the $ gets printed in the echo command. If you're
 # create the file using vim, just type $, not \$.
 echo "PATH=$(pwd)/bin:\${PATH}" > etc/srcgreeting.sh
+# Answer 5
 source etc/srcgreeting.sh 
+# Answer 6
 which greeting
 greeting
