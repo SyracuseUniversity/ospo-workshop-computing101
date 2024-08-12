@@ -2,7 +2,7 @@
 
 **Purpose**: Learn about UNIX permissions, variables, and environments.
 
-## Install `conda`
+### Pre-requisite: Install `conda`
 
 Exercise 4 needs `conda` to be installed. There are several different ways to install `conda` (Anaconda, Miniconda, Miniforge); we will use [Miniforge](https://github.com/conda-forge/miniforge?tab=readme-ov-file). To install, do the following:
 
@@ -16,3 +16,10 @@ The first command (`wget`) will download the installer script you need to instal
 2. Follow the onscreen instructions. It's best to answer "yes" to all the prompts: this will install `conda` to the default location (`~/miniforge3`) and will cause conda to be active everytime you open up a terminal.
 
 3. Open a new terminal window for the installation to take effect. If the installation was successful, you should see `(base)` to the left of your command prompt. This means that you're in the `base` environment.
+
+## Exercises
+
+* [Exercise 1: Evaluating Conditionals](exercise1/README.md)
+* [Exercise 2: Permissions and setting environment variables](exercise2/README.md)
+* [Exercise 3: Using a `for` loop](exercise3/README.md)
+* [Exercise 4: Using conda and mamba to create environments and install packages](exercise4/README.md)
