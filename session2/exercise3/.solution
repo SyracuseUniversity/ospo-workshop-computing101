@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+source ../exercise2/etc/srcgreeting.sh
+for tm in $(cat test_times.txt); do
+    echo $tm $(greeting $tm)
+done
+# Note: here we sourced the srcgreeting.sh script in exercise 2 so that we
+# can call greeting in the for loop without needing to specify its path. You
+# don't need to do this. Instead, you could
+# do $(bash ../exercise2/greeting ${tm}) or copy greeting to
+# this directory and do $(./greeting ${tm}) in the above loop.

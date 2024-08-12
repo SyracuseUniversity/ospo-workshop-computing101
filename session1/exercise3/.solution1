@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+cp names.txt names-seven.txt
+# the -i will modify the file in place; giving -i '.bkup', will cause
+# a copy of the original file to be saved to names-seven.txt.bkup. If you
+# don't want a backup pass -i'' (on MacOS) or give no argument (on Linux)
+sed -i'.bkup' 's/7/seven/g' names-seven.txt

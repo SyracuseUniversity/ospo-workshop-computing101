@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+# Answer 1
+# Note: here we give the -p flag to mkdir so that it doesn't raise an error if
+# bin already exists.
+mkdir -p bin
+# The next block just checks if you completed exercise1; if not, it uses the
+# solution there.
+if [ ! -f ../exercise1/greeting ]; then
+    cp ../exercise1/.solution ../exercise1/greeting
+fi
+# Answer 2
+cp ../exercise1/greeting bin/
+# Answer 3
+chmod +x bin/greeting
+# Ansewr 4
+mkdir -p etc
+# Note: for the next step, you could also use vim to create etc/srcgreeting.sh,
+# then add the PATH command. Here, we're using $(pwd) to get the abosulte path
+# of this directory. This will not work if you create the text file. Instead,
+# run `pwd` on the command line to get the absoulte path of this directory,
+# copy that, then paste it into the file. For example, if the absolute path of
+# this directory is /some/dir, then you should have:
+# PATH=/some/dir/bin:${PATH}
+# in srcgreeting.sh. Also note that in the next line we have to escape the $
+# (by doing \$) so that the $ gets printed in the echo command. If you're
+# create the file using vim, just type $, not \$.
+echo "PATH=$(pwd)/bin:\${PATH}" > etc/srcgreeting.sh
+# Answer 5
+source etc/srcgreeting.sh 
+# Answer 6
+which greeting
+greeting
