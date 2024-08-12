@@ -1,8 +1,18 @@
-# Session 2: bash 2, Environments, and Conda
+# Session 2: More `bash`, Environments, and Conda
 
 **Purpose**: Learn about UNIX permissions, variables, and environments.
 
 ## Install `conda`
 
-Exercises 4 and 5 need `conda` to be installed. We will use the Miniconda installer. To do that, follow the instructions here: [install miniconda](https://docs.anaconda.com/miniconda/#quick-command-line-install). Click on the tab corresponding to your operating system. **Windows users: Follow the Linux installation instructions, NOT the Windows instructions: you are installing conda under Ubuntu.** After you install, you'll need to open a new terminal window. If the installation was successful, you should see `(base)` to the left of your command prompt. This means that you're in the `base` environment.
+Exercise 4 needs `conda` to be installed. There are several different ways to install `conda` (Anaconda, Miniconda, Miniforge); we will use [Miniforge](https://github.com/conda-forge/miniforge?tab=readme-ov-file). To install, do the following:
 
+1. From your home directory, run
+```
+wget "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+bash Miniforge3-$(uname)-$(uname -m).sh
+```
+The first command (`wget`) will download the installer script you need to install `conda`; the second script installs it.
+
+2. Follow the onscreen instructions. It's best to answer "yes" to all the prompts: this will install `conda` to the default location (`~/miniforge3`) and will cause conda to be active everytime you open up a terminal.
+
+3. Open a new terminal window for the installation to take effect. If the installation was successful, you should see `(base)` to the left of your command prompt. This means that you're in the `base` environment.
