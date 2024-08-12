@@ -23,3 +23,4 @@ The first command (`wget`) will download the installer script you need to instal
 * [Exercise 2: Permissions and setting environment variables](exercise2)
 * [Exercise 3: Using a `for` loop](exercise3)
 * [Exercise 4: Using conda and mamba to create environments and install packages](exercise4)
+* [Exercise 5: `tar` and scripting OS operations](exercise5)
