@@ -19,7 +19,7 @@ The first command (`wget`) will download the installer script you need to instal
 
 ## Exercises
 
-* [Exercise 1: Evaluating Conditionals](exercise1/README.md)
-* [Exercise 2: Permissions and setting environment variables](exercise2/README.md)
-* [Exercise 3: Using a `for` loop](exercise3/README.md)
-* [Exercise 4: Using conda and mamba to create environments and install packages](exercise4/README.md)
+* [Exercise 1: Evaluating Conditionals](exercise1)
+* [Exercise 2: Permissions and setting environment variables](exercise2)
+* [Exercise 3: Using a `for` loop](exercise3)
+* [Exercise 4: Using conda and mamba to create environments and install packages](exercise4)
