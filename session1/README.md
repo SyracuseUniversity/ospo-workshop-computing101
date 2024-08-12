@@ -72,4 +72,4 @@ cd ospo-workshop-computing101
 
 * [Exercise 1: A simple `bash` script](exercise1/README.md)
 * [Exercise 2: `vim` practice](exercise2/README.md)
-* [Exercise 3: `sed`, `sort`, and more `vim`](exercise3/README.md)
+* [Exercise 3: Search and replace](exercise3/README.md)
