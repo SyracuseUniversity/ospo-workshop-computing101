@@ -1,6 +1,6 @@
 # Exercise 4: Using `conda` and `mamba` to create environments and install packages.
 
-*Note: This task requires that you have conda installed already. Follow the instructions in `../README.md` to do that if you have not done so already.*
+*Note: This task requires that you have conda installed already. Follow the instructions in [the Session 2 overview](../README.md) to do that if you have not done so already.*
 
 1. Create a conda environment called `conda-test`.
 
